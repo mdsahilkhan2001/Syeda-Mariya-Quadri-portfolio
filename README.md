@@ -26,7 +26,7 @@ A high-end, professional portfolio built with **React.js**, **Framer Motion**, a
 
 | Hero Section | Technical Expertise |
 | :---: | :---: |
-| ![Hero](https://raw.githubusercontent.com/mdsahilkhan2001/Syeda-Mariya-Quadri-portfolio/main/public/profile.png) | (Add Skills Screenshot Here) |
+| ![Hero](public/Screenshot%202026-05-10%20032614.png) | ![Skills](public/Screenshot%202026-05-10%20032709.png) |
 
 ## 🚀 Getting Started
 
