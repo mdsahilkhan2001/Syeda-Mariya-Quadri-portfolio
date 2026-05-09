@@ -1,16 +1,54 @@
-# React + Vite
+# Syeda Mariya Quadri - Premium Data Analyst Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-end, professional portfolio built with **React.js**, **Framer Motion**, and **EmailJS**. Designed with a premium "Cyber-Glassmorphic" aesthetic to showcase expertise in Data Analysis, Web Development, and Dashboard Creation.
 
-Currently, two official plugins are available:
+![Portfolio Banner](public/profile.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
 
-## React Compiler
+-   **Premium Glassmorphic UI:** Modern design with vibrant gradients, blurred surfaces, and 3D shadows.
+-   **Interactive Timeline:** A professional Experience & Education journey with "Pop-up" hover effects and high-resolution institution logos.
+-   **Dynamic Hero Section:** Animated profile picture with a rotating gradient border and interactive floating info cards.
+-   **EmailJS Integration:** Fully functional contact form that sends messages directly to the owner's inbox without a backend.
+-   **CV Request Flow:** Integrated "Request CV" system to capture leads and professional inquiries.
+-   **Fully Responsive:** Optimized for all devices, from 4K monitors to small mobile screens.
+-   **Social Integration:** Direct links to LinkedIn and GitHub with custom interactive icons.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+-   **Frontend:** React.js, Vite
+-   **Animations:** Framer Motion
+-   **Icons:** Lucide-React
+-   **Email Service:** EmailJS
+-   **Styling:** Vanilla CSS (Modern CSS3 Variables)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Screenshots
+
+| Hero Section | Technical Expertise |
+| :---: | :---: |
+| ![Hero](https://raw.githubusercontent.com/mdsahilkhan2001/Syeda-Mariya-Quadri-portfolio/main/public/profile.png) | (Add Skills Screenshot Here) |
+
+## 🚀 Getting Started
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/mdsahilkhan2001/Syeda-Mariya-Quadri-portfolio.git
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Set up Environment Variables:**
+    Create a `.env` file in the root directory and add your EmailJS credentials:
+    ```env
+    VITE_EMAILJS_SERVICE=your_service_id
+    VITE_EMAILJS_TEMPLATE=your_template_id
+    VITE_EMAILJS_USER=your_user_id
+    ```
+4.  **Run locally:**
+    ```bash
+    npm run dev
+    ```
+
+## 📄 License
+Designed & Developed by **Syeda Mariya Quadri**. All rights reserved.
