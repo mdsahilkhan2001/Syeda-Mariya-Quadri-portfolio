@@ -2,7 +2,7 @@
 
 A high-end, professional portfolio built with **React.js**, **Framer Motion**, and **EmailJS**. Designed with a premium "Cyber-Glassmorphic" aesthetic to showcase expertise in Data Analysis, Web Development, and Dashboard Creation.
 
-![Portfolio Banner](public/profile.png)
+![Portfolio Banner](public/Screenshot%202026-05-10%20032614.png)
 
 ## ✨ Key Features
 
