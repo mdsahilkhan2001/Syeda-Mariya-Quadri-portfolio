@@ -1,0 +1,245 @@
+.footer {
+  position: relative;
+  border-top: 1px solid var(--surface-border);
+  background: linear-gradient(to bottom, transparent, rgba(15, 17, 21, 0.95));
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 992px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+}
+
+.footer-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer-title {
+    font-size: 3rem;
+  }
+}
+
+.footer-desc {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-light);
+}
+
+.contact-text span {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.contact-text p, .contact-text a {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.contact-text a:hover {
+  color: var(--primary-light);
+}
+
+.footer-form {
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer-form {
+    padding: 2.5rem;
+  }
+}
+
+.footer-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-light);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(109, 40, 217, 0.4);
+}
+
+.submit-btn.loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.form-status {
+  margin-top: 1.5rem;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.form-status.success {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.form-status.error {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--surface-border);
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-bottom p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary-light);
+  transform: translateY(-3px);
+  border-color: var(--primary-light);
+}
+
+.scroll-top {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  cursor: pointer;
+  border: 1px solid var(--surface-border);
+  transition: all 0.3s ease;
+}
+
+.scroll-top:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .scroll-top {
+    position: relative;
+    top: 0;
+  }
+}

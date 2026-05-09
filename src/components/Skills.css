@@ -1,0 +1,191 @@
+.skills-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+.skills-container-marquee {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  overflow: hidden; /* Prevent horizontal scrollbars on body */
+  padding-bottom: 2rem;
+}
+
+.skill-category-marquee {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--primary-light);
+  display: inline-block;
+}
+
+/* Marquee Styles */
+.marquee-wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  padding: 1.5rem 0;
+  /* Fades the edges of the marquee nicely */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  /* Hover pauses the animation natively in Framer Motion if configured, but we can do CSS fallback or let it run */
+}
+
+/* We pause the track when hovering over it to allow user to view the skill */
+.marquee-track:hover {
+  animation-play-state: paused !important; /* If using pure CSS, but we are using Framer Motion */
+}
+
+/* Premium Card Design for Marquee */
+.skill-card-premium {
+  background: rgba(20, 22, 28, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific sizing for marquee cards to keep them uniform */
+.marquee-card {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.skill-card-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255,255,255,0.06), transparent 40%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.skill-card-premium:hover::before {
+  opacity: 1;
+}
+
+.skill-card-premium:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.skill-card-inner {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  z-index: 1;
+}
+
+/* Clean White Icon Container */
+.skill-image-container {
+  width: 75px;
+  height: 75px;
+  border-radius: 16px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.skill-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.skill-name-large {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Progress Bar */
+.skill-progress-track {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.skill-progress-bar {
+  height: 100%;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: 0 0 10px currentColor;
+}
+
+/* Shine Animation */
+.skill-progress-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Hover glow for the whole card border matching the color */
+.skill-card-premium:hover {
+  border-color: var(--hover-color, rgba(255, 255, 255, 0.2));
+}
