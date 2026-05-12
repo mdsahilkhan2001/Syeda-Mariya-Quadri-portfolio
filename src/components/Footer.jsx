@@ -11,7 +11,7 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
     setStatus('sending');
 
@@ -48,7 +48,7 @@ const Footer = () => {
                 <div className="contact-icon glass"><Mail size={20} /></div>
                 <div className="contact-text">
                   <span>Email Me</span>
-                  <a href="mailto:evoastra2023@gmail.com">evoastra2023@gmail.com</a>
+                  <a href="mailto:syedaquadri66@gmail.com">syedaquadri66@gmail.com</a>
                 </div>
               </div>
               
@@ -65,12 +65,12 @@ const Footer = () => {
           <div className="footer-form glass-card">
             <h3>Send a Message</h3>
             <p className="form-subtitle">I'll get back to you and send my CV shortly.</p>
-            <form ref={formRef} onSubmit={handleSubmit}>
+            <form ref={formRef} onSubmit={sendEmail}>
               <div className="form-group">
-                <input type="text" name="user_name" placeholder="Your Name" required className="glass" />
+                <input type="text" name="from_name" placeholder="Your Name" required className="glass" />
               </div>
               <div className="form-group">
-                <input type="email" name="user_email" placeholder="Your Email" required className="glass" />
+                <input type="email" name="from_email" placeholder="Your Email" required className="glass" />
               </div>
               <div className="form-group">
                 <textarea name="message" rows="4" placeholder="How can I help you? (Request CV here)" required className="glass"></textarea>
